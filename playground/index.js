@@ -1,15 +1,18 @@
 /*
-  Redis Strings and their use cases
+  String Key definition for an app, and a shop
   - pic
 
-  - set otp:use_100 12345 ex 120
-  - get otp:use_100
-  - ttl otp:use_100
-  - set app:stats:daily_visitors 1000
-  - get app:stats:daily_visitors
-  - set app:config:title "KlickAnalytics"
   - get app:config:title
-  - set app:users:types "Billable, Free"
-  - set app:config:usertimeout 10000
+  - set app:config:url "http://www.klickanalytics.com"
+  - keys *
+  - set app:config:greetings "Welcome to KlickAnalytics"
+  - keys *
+  - set shop:101:name "Pizza Store"
+  - keys *
+  - set shop:101:location "123 Broadway"
+  - set shop:101:country "USA"
+  - keys *
+  - keys *shop*
+  - get shop:101:name
 
 */
