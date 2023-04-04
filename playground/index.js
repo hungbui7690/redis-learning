@@ -1,54 +1,19 @@
 /*
-  Moving elements within sets via SMOVE
+  Sets Operations - Union
   - pic
 
-  - sadd num:odd 1 3 5 7 9
-  - sadd num:even 2 4 6 8 10
-  - smembers num:odd
-  - smembers num:even
-  - smove num:odd num:even
-  - smove num:odd num:even 1
-  - smembers num:odd
-  - smembers num:even
-  - smove num:odd num:even 1
-  - smove num:odd num:even 2
-  - smove num:odd num:even 3
-  - smembers num:odd
-  - smove num:odd num:even 5 7
+  - sadd num1 1 2 3 4 5
+  - sadd num2 2 4 6 8 10
+  - smembers num1
+  - smembers num2
+  - sunion num1 num2
+  - sadd num3 20 40 50
+  - sunion num1 num2 num3
   - 
-  - sadd orders:pending 1 2 3
-  - sadd orders:completed 10 20 30
-  - smembers orders:pending
-  - smembers orders:completed
-  - smove orders:pending orders:completed 1
-  - smembers orders:completed
-  - smove orders:pending orders:completed 2
-  - smove orders:pending orders:completed 3
-  - smembers orders:completed
-  - smembers orders:pending
-  - 
-  - sadd jobs:started 1 2 3
-  - sadd jobs:in-progress 10 20 30
-  - sadd jobs:completed 100 200 30
-  - smembers jobs:started
-  - smembers jobs:in-progress
-  - smembers jobs:completed
-  - smove jobs:started jobs:in-progress 1
-  - smove jobs:started jobs:in-progress 2
-  - smove jobs:started jobs:in-progress 3
-  - smembers jobs:in-progress
-  - smove jobs:in-progress jobs:completed 2
-  - smove jobs:in-progress jobs:completed 20
-  - smembers jobs:completed
-  - sadd tasks:pending a b c d
-  - sadd tasks:completed x y z
-  - smembers tasks:pending
-  - smembers tasks:completed
-  - smove tasks:pending tasks:completed a
-  - smove tasks:pending tasks:completed b
-  - smove tasks:pending tasks:completed c
-  - smove tasks:pending tasks:completed d
-  - smembers tasks:pending
-  - smembers tasks:completed
+  - sadd tickets:pending 1 2 3 4 5
+  - sadd tickets:completed 10 20 30 40 50
+  - smembers tickets:pending
+  - smembers tickets:completed
+  - sunion tickets:pending tickets:completed
   
 */
