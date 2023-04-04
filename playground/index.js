@@ -1,20 +1,19 @@
 /*
-  Using GETSET for an atomic reset
+  Extract string value via GETRANGE
   - pic
 
-  - set key1 val1
-  - get key1
-  - getset key1 val1.2
-  - get key1
-  - keys *keys*
-  - getset key2 1
-  - set app:daily_tokens 10
-  - get app:daily_tokens
-  - decr app:daily_tokens
-  - decr app:daily_tokens
-  - decr app:daily_tokens
-  - getset app:daily_tokens 10
-  - get app:daily_tokens
-
+  - set website "KlickAnalytics.com"
+  - get website
+  - getrange website 0 1
+  - getrange website 0 0
+  - getrange website 0 1
+  - getrange website 0 2
+  - getrange website 0 3
+  - getrange website 0 4
+  - getrange website 5 13
+  - getrange website 0 100
+  - getrange website -1 0
+  - getrange website 15 17
+  - getrange website -3 -1
 
 */
