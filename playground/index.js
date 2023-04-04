@@ -1,16 +1,10 @@
 /*
-  Counting via HINCRBY and HINCRBYFLOAT
+  Using HSETNX to add a new field
   - pic
 
+  - hsetnx user:101 fname "John2"
   - hgetall user:101
-  - hkeys user:101
-  - hset user:101 score:-10
-  - hgetall user:101
-  - hset user:101 commission 0.25
-  - hgetall user:101
-  - hincrbyfloat user:101 commission 1.2
-  - hgetall user:101
-  - hincrbyfloat user:101 commission -1.2
+  - hsetnx user:101 f1 v1
   - hgetall user:101
 
 */
