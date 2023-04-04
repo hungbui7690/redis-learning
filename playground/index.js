@@ -1,16 +1,15 @@
 /*
-  Set key if not exists using SETNX
+  String Encoding types
   - pic
-  
-  - set num1 100
-  - get num1
-  - keys *
-  - setnx num1 200
-  - keys *
-  - get num1
-  - setnx num2 200
-  - get num2
-  - setnx user:101:login_attempt 1
-  - get user:101:login_attempt
+
+  - set mykey 1233456
+  - get mykey
+  - object encoding mykey
+  - set mykey "test string"
+  - object encoding mykey
+  - strlen mykey
+  - set mykey "This is a a long string defined for redis database structure"
+  - object encoding mykey
+
 
 */
