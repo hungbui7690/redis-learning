@@ -1,20 +1,24 @@
 /*
-  Saving keys information on server
+  Rename a Key - RENAME
   - pic
 
-  - set 1 hello1
-  - set 2 hello2
-  - get 1
-  - get 2
-  - shutdown save
-  - ping
-  - get 1
-  - get 2
-  - set 3 hello3
-  - shutdown nosave
-  - get 3
-  - get 1
-  - get 2
+  - set name1 "John"
+  - set name2 "Doe"
+  - get name1
+  - get name2
+  - rename name1 fname
+  - get name1
+  - get fname
+  - rename name2 lname
+  - get name2
+  - get lname
+  - rename 11 abc
+  - rename fname lastname
+  - get fname
+  - get lname
+  - rename fname lname
+  - get fname
+  - get lname
 
 
 */
