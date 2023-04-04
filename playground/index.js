@@ -1,18 +1,28 @@
 /*
-  Keys naming conventions
+  Keys pattern matching - KEYS
   - pic
 
-  - set userAdam Adam
-  - set userAmy Amy
+  - set hello 1
+  - set hallo 2
+  - set hrllo 3
+  - set heello 4
+  - set hijllo 5
   - keys *
-  - set user:100 Adam
-  - set user:101 Amy
+  - keys *ll*
+  - keys *e*
+  - keys h?llo
+  - keys h*llo
+  - keys h[ae]llo
+  - keys h[x]llo
+  - keys h[ee]llo
+  - keys h[e]llo
+  - keys [a-b]llo
+  - keys [a-z]llo
   - keys *
-  - del userJohn userAdam userAmy
-  - keys *
-  - set user:100:friends Scott
-  - set user:101:friends John
-  - keys *
+  - keys user:*
+  - keys user:????
+  - keys user:???:group
+  - keys user:*:group
 
 
 */
