@@ -1,9 +1,8 @@
 /*
-  Get all fields name via HKEYS
+  Get all fields values via HVALS
   - pic
 
   - hgetall user:101
-  - hkeys user:101
-  - hkeys user:102
+  - hvals user:101
 
 */
