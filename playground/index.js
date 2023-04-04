@@ -1,25 +1,23 @@
 /*
-  Sets Maintenance - SADD, SREM, SPOP
-  - pics
+  Checking a membership existence
+  - pic
 
-  - sadd subjects math
+  - smembers cars
+  - sismember cars ford
+  - sismember cars FORD
+  - sismember cars Ford
+  - sismember cars ford
   - smembers subjects
-  - sadd subjects english science physics
-  - sadd subjects bingo
+  - sadd subjects math ai english
   - smembers subjects
-  - srem subjects bingo
+  - sismember subjects english
+  - sismember subjects ai
   - smembers subjects
-  - srem subjects abc
-  - smembers subjects
-  - sadd subjects a b c d
-  - smembers subjects
-  - spop subjects
-  - spop subjects
-  - spop subjects
-  - smembers subjects
-  - spop subjects 2
-  - spop subjects 2
-  - spop subjects 2
-  - spop subjects 2 
+  - sadd player:online alpha beta gamma
+  - smembers player:online
+  - sismember player:online beta
+  - sismember player:online amazing88
+  - smismember player:online alpha amazing88
+  - smismember subjects english technology
   
 */
