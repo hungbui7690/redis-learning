@@ -1,17 +1,10 @@
 /*
-  Update an element value via LSET
+  Find length of a list via LLEN
   - pic
 
-  - rpush num 1 2 3 4 5
-  - lrange num 0 -1
-  - lset num 2 30
-  - lrange num 0 -1
-  - lset num 4 50
-  - lrange num 0 -1
-  - lset num -1 50
-  - lset num -1 100
-  - lrange num 0 -1
-  - lset num 100 199
-  - lrange num 0 -1
+  - rpush app:config:lst_supported_lang "English" "Japanese"
+  - rpush app:config:lst_supported_lang "English" "Japanese" "Arabic" "Chinese"
+  - lrange app:config:lst_supported_lang 0 -1
+  - llen app:config:lst_supported_lang
 
 */
