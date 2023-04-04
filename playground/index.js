@@ -1,12 +1,10 @@
 /*
-  Delete fields via HDEL
-  - pic 
+  Use HEXISTS to check if a field exist
+  - pic
 
-  - hset user:101 f1 v1 f2 v2
-  - hgetall user:101
-  - hdel user:101 f2
-  - hgetall user:101
-  - hdel user:101 f1 f2
-  - hgetall user:101
+  - hexists user:101 fname
+  - hexists user:101 fname1
+  - hmget user:101 fname lname
+  - hmget user:101 fname lname1
 
 */
