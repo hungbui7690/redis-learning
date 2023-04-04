@@ -1,16 +1,16 @@
 /*
-  Set Key and expiration using SETEX and PSETEX
+  Set key if not exists using SETNX
   - pic
-
-  - set num 1
-  - get num
-  - expire num 10
-  - ttl num
-  - setex num 120 1
-  - ttl num
-  - setex app:config:timeout 100 1
-  - ttl app:config:timeout
-  - psetnx num 10000 1
-  - ttl num
+  
+  - set num1 100
+  - get num1
+  - keys *
+  - setnx num1 200
+  - keys *
+  - get num1
+  - setnx num2 200
+  - get num2
+  - setnx user:101:login_attempt 1
+  - get user:101:login_attempt
 
 */
