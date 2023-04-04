@@ -1,5 +1,5 @@
 /*
-  
+  Introduction to lists
+  - pic
 
-  
 */
