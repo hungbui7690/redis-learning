@@ -1,41 +1,20 @@
 /*
-  Counting numbers using INCR and DECR
+  Counting floating point numbers
   - pic
-  
 
-  - set student:101:score:math 10
-  - get student:101:score:math
-  - type student:101:score:math
-  - incr student:101:score:math
-  - incr student:101:score:math
-  - incr student:101:score:math
-  - incr student:101:score:math
-  - incr student:101:score:math
-  - incr student:101:score:math
-  - decr student:101:score:math
-  - decr student:101:score:math
-  - decr student:101:score:math
-  - decr student:101:score:math
-  - decr student:101:score:math
-  - decr student:101:score:math
-  - set customer:101:balance 100
-  - get customer:101:balance
-  - incr customer:101:balance
-  - incr customer:101:balance
-  - incr customer:101:balance
-  - incr customer:101:balance
-  - decr customer:101:balance
-  - decr customer:101:balance
-  - decr customer:101:balance
-  - decr customer:101:balance
-  - incrby customer:101:balance 100
-  - get customer:101:balance
-  - incrby customer:101:balance 1000
-  - incrby customer:101:balance 1000
-  - incrby customer:101:balance 1000
-  - decrby customer:101:balance 1000
-  - decrby customer:101:balance 1000
-  - decrby customer:101:balance 1000
-  - get customer:101:balance
+  - set num 1
+  - set num 1.5
+  - get num
+  - type num
+  - incrby num 1
+  - incrbyfloat num 1.2
+  - decrby num 1
+  - decrbyfloat num -1.2
+  - incrbyfloat num -1.2
+  - set app:fees:cc 1.0
+  - incrbyfloat app:fees:cc 0.2
+  - incrbyfloat app:fees:cc 2.0
+  - incrbyfloat app:fees:cc -1.5
+
 
 */
