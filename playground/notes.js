@@ -1,7 +1,13 @@
 /*
 
-  > docker-compose up --build -d --remove-orphans
-  > http://localhost:3050
+  
+  > docker-compose up --build -d
+  > 2 ways to work with redis: 
+    + docker-compose run rcli
+    + npx rbook
+      + http://localhost:3050 > rbook link
+
+
 
 
   - Start
