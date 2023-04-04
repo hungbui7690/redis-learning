@@ -1,12 +1,9 @@
 /*
-  Installing Redis P3 ***
-  - this one is slightly different than previous one 
-  - create docker-compose.yaml
-    > we will setup redis and redis-cli in this file
+  Starting and Shutting Down Redis Server
+  - redis-server
+  or 
+  - sudo service redis-server start
 
-
-  > docker-compose up --build -d
-  > docker-compose run rcli
-
-
-*/
+  - shutdown nosave
+  
+  */
