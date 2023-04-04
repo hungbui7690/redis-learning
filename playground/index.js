@@ -1,9 +1,17 @@
 /*
-  Starting and Shutting Down Redis Server
-  - redis-server
-  or 
-  - sudo service redis-server start
+  Getting Server Information
+  - command in redis-cli:
+    > info
+    > info server
+    > info clients
+    > info memory
+    > info stats
+    > info replication
+    > info cpu
+    > info cluster
+    > info keyspace
 
-  - shutdown nosave
+  *** more detail later
+
   
   */
