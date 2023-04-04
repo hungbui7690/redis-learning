@@ -1,28 +1,20 @@
 /*
-  Keys pattern matching - KEYS
+  Saving keys information on server
   - pic
 
-  - set hello 1
-  - set hallo 2
-  - set hrllo 3
-  - set heello 4
-  - set hijllo 5
-  - keys *
-  - keys *ll*
-  - keys *e*
-  - keys h?llo
-  - keys h*llo
-  - keys h[ae]llo
-  - keys h[x]llo
-  - keys h[ee]llo
-  - keys h[e]llo
-  - keys [a-b]llo
-  - keys [a-z]llo
-  - keys *
-  - keys user:*
-  - keys user:????
-  - keys user:???:group
-  - keys user:*:group
+  - set 1 hello1
+  - set 2 hello2
+  - get 1
+  - get 2
+  - shutdown save
+  - ping
+  - get 1
+  - get 2
+  - set 3 hello3
+  - shutdown nosave
+  - get 3
+  - get 1
+  - get 2
 
 
 */
