@@ -1,15 +1,17 @@
 /*
-  Trim a list using LTRIM
+  Update an element value via LSET
   - pic
 
-  - del num
-  - lpush num 1 2 3 4 5 6 7 8 9 10
+  - rpush num 1 2 3 4 5
   - lrange num 0 -1
-  - ltrim num 0 -1
+  - lset num 2 30
   - lrange num 0 -1
-  - ltrim num 1 -1
+  - lset num 4 50
   - lrange num 0 -1
-  - ltrim num 2 -1
+  - lset num -1 50
+  - lset num -1 100
+  - lrange num 0 -1
+  - lset num 100 199
   - lrange num 0 -1
 
 */
