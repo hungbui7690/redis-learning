@@ -1,20 +1,18 @@
 /*
-  Using APPEND as list of timeseries data
-  - add value to end of the string
+  Setting and getting multiple keys via MSET, MGET, MSETNX
   - pic
-  
 
-  - set title "hello"
-  - get title
-  - strlen title
-  - set website:stats:daily_visitors_log "100"
-  - get website:stats:daily_visitors_log
-  - append website:stats:daily_visitors_log "200"
-  - get website:stats:daily_visitors_log
-  - set website:stats:daily_visitors_log "100"
-  - get website:stats:daily_visitors_log
-  - set website:stats:daily_visitors_log " 200"
-  - get website:stats:daily_visitors_log
-  - append website:stats:daily_visitors_log " 3000"
-  - get website:stats:daily_visitors_log
+  - set k1 v1
+  - get k1
+  - mset k1 v1 k2 v2 k3 v3
+  - keys *
+  - get k1
+  - get k2
+  - mget k1 k2 k3
+  - mset k1 v10 k2 v2 k3 v3
+  - get k1
+  - msetnx k1 v20 k2 v2 k3 v3
+  - get k1
+
+
 */
