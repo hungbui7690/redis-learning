@@ -1,18 +1,41 @@
 /*
-  String Key definition for an app, and a shop
+  Counting numbers using INCR and DECR
   - pic
+  
 
-  - get app:config:title
-  - set app:config:url "http://www.klickanalytics.com"
-  - keys *
-  - set app:config:greetings "Welcome to KlickAnalytics"
-  - keys *
-  - set shop:101:name "Pizza Store"
-  - keys *
-  - set shop:101:location "123 Broadway"
-  - set shop:101:country "USA"
-  - keys *
-  - keys *shop*
-  - get shop:101:name
+  - set student:101:score:math 10
+  - get student:101:score:math
+  - type student:101:score:math
+  - incr student:101:score:math
+  - incr student:101:score:math
+  - incr student:101:score:math
+  - incr student:101:score:math
+  - incr student:101:score:math
+  - incr student:101:score:math
+  - decr student:101:score:math
+  - decr student:101:score:math
+  - decr student:101:score:math
+  - decr student:101:score:math
+  - decr student:101:score:math
+  - decr student:101:score:math
+  - set customer:101:balance 100
+  - get customer:101:balance
+  - incr customer:101:balance
+  - incr customer:101:balance
+  - incr customer:101:balance
+  - incr customer:101:balance
+  - decr customer:101:balance
+  - decr customer:101:balance
+  - decr customer:101:balance
+  - decr customer:101:balance
+  - incrby customer:101:balance 100
+  - get customer:101:balance
+  - incrby customer:101:balance 1000
+  - incrby customer:101:balance 1000
+  - incrby customer:101:balance 1000
+  - decrby customer:101:balance 1000
+  - decrby customer:101:balance 1000
+  - decrby customer:101:balance 1000
+  - get customer:101:balance
 
 */
