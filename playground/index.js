@@ -1,18 +1,20 @@
 /*
-  Setting and getting multiple keys via MSET, MGET, MSETNX
+  Using GETSET for an atomic reset
   - pic
 
-  - set k1 v1
-  - get k1
-  - mset k1 v1 k2 v2 k3 v3
-  - keys *
-  - get k1
-  - get k2
-  - mget k1 k2 k3
-  - mset k1 v10 k2 v2 k3 v3
-  - get k1
-  - msetnx k1 v20 k2 v2 k3 v3
-  - get k1
+  - set key1 val1
+  - get key1
+  - getset key1 val1.2
+  - get key1
+  - keys *keys*
+  - getset key2 1
+  - set app:daily_tokens 10
+  - get app:daily_tokens
+  - decr app:daily_tokens
+  - decr app:daily_tokens
+  - decr app:daily_tokens
+  - getset app:daily_tokens 10
+  - get app:daily_tokens
 
 
 */
