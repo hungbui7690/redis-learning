@@ -1,19 +1,15 @@
 /*
-  Remove elements via LPOP and RPOP
-  - pic 
+  Trim a list using LTRIM
+  - pic
 
-  - lpush num 1 2 3 4 5 6 7 8 9 10
-  - lrange num 0 -1
   - del num
   - lpush num 1 2 3 4 5 6 7 8 9 10
   - lrange num 0 -1
-  - lpop num
+  - ltrim num 0 -1
   - lrange num 0 -1
-  - rpop num
-  - rpop num
+  - ltrim num 1 -1
   - lrange num 0 -1
-  - lpop num 2
-  - rpop num 1
+  - ltrim num 2 -1
   - lrange num 0 -1
 
 */
