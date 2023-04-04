@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis_studies:
+    image: 'redis:latest'
+    volumes:
+      - ./redis-data:/app
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

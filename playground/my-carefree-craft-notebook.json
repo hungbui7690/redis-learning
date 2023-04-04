@@ -1,0 +1,1 @@
+{"id":"1e4951","fileName":"my-carefree-craft-notebook.json","name":"My Carefree Craft Notebook","cells":[{"id":"61f8d2","type":"markdown","content":"**Notes**\n\n* Add some notes here\n* Use markdown"},{"id":"2f6a81","type":"redis","content":"SET key value "}],"createdAt":"2023-04-03T10:22:10.892Z"}
