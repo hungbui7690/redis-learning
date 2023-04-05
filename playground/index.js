@@ -1,11 +1,10 @@
 /*
-  Using ZADD and ZRANGE
+  Display data in reverse score order
   - pic
 
-  - zadd users:followers adam 10
-  - zadd users:followers 10 adam 20 scott 30 amy
-  - zrange users:followers
-  - zrange users:followers 0 -1
+  - zadd users:followers 1 John 100 David
   - zrange users:followers 0 -1 withscores
-  
+  - zrevrange users:followers 0 -1
+  - zrevrange users:followers 0 -1 withscores
+
 */
