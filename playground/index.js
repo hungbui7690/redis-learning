@@ -1,10 +1,14 @@
 /*
-  Display data in reverse score order
+  Atomic operations by ZINCRBY
   - pic
 
-  - zadd users:followers 1 John 100 David
   - zrange users:followers 0 -1 withscores
-  - zrevrange users:followers 0 -1
-  - zrevrange users:followers 0 -1 withscores
+  - zincrby users:followers 5 adam
+  - zrange users:followers 0 -1 withscores
+  - zincrby users:followers -5 scott
+  - zrange users:followers 0 -1 withscores
+  - zincrby users:followers 5 hans
+  - zrange users:followers 0 -1 withscores
+
 
 */
