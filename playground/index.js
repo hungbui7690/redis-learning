@@ -1,13 +1,18 @@
 /*
-  Redis Database Design - A Chat Application P1
-  - pic 1 to 9
+  Redis Database Design - A Chat Application P2
+  - pic 10 to end
 
-  - srem users user1
-  - rpush msg:room:lobby "user1:testmessage"
-  - rpush msg:room:lobby "user2:testmessage"
-  - lrange msg:room:lobby 0 -1
-  - rpush msg:direct:user1:user2 "user1: test message"
-  - rpush msg:direct:user2:user1 "user2: test message"
-  - lrange msg:direct:user1:user2 0 -1
+  - smembers room:lobby
+  - smembers room:admin
+  - smember room:special
+  - sadd room:lobby user1 user2
+  - smembers room:lobby
+  - smembers room:admin
+  - subscribe room:lobby
+  - ctrl + c
+  - sadd room:lobby user1
+  - unsubscribe room:lobby
+  - srem room:lobby user1
+  - smembers room:lobby
 
 */
