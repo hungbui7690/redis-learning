@@ -6,4 +6,13 @@ services:
     image: 'redis:latest'
     links:
       - redis
+    volumes:
+      - redis-data:/data
     command: redis-cli -h redis
+volumes:
+  redis-data:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/data'
