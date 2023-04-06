@@ -1,19 +1,13 @@
 /*
-  Using redis-cli to scan keys
+  Using bash to get all keys and values
   - pic
+  - file: readkeys.sh
 
-  - set name1 1
-  - set name2 2
-  - set name3 e
-  - set name4 4
-  - debug populate 50
-  - redis-cli --scan
-  - redis-cli --scan --pattern '*'
-  - redis-cli --scan --pattern 'k*'
-  - redis-cli --scan --pattern '*key*'
-  - redis-cli --scan --pattern '*name*'
-  - redis-cli --scan --pattern '*' > keys.csv
-  - cat keys.csv
-  - redis-cli -h
+
+  *** Redirect in Linux
+    > https://linuxhint.com/while_read_line_bash/
+    > https://tldp.org/LDP/intro-linux/html/sect_05_01.html
+    > http://mywiki.wooledge.org/BashFAQ/024
+
 
 */
