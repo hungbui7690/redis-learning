@@ -1,6 +1,5 @@
 /*
-  Introduction to Redis Protocol
+  Turning strings into Redis Protocol Specifications
   - pics
-
 
 */
