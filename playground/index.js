@@ -1,5 +1,5 @@
 /*
-  Turning strings into Redis Protocol Specifications
-  - pics
+  Generating Redis Protocol commands using python
+  *** check 2 python files
 
 */
